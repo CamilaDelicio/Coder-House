@@ -22,7 +22,7 @@
 .nav ul {
     display: flex;
     list-style: none;
-    padding: 0 30px;
+    padding: 20px 30px;
 }
 
 .nav ul li {
@@ -31,7 +31,7 @@
 
 .nav ul li a {
     color: #fff; 
-    font-family: roboto;
+    font-family: "Roboto";
     font-size: 30px;
 }
 .portada img{
@@ -52,8 +52,7 @@
     flex: 1;
     padding: 20px;
     font-family: "Rochester", cursive;
-    font-weight: 400px;
-    font-size: 24px;
+    
 }
 .primeraSeccion-texto h2{
     font-size: 100px ;
@@ -67,7 +66,6 @@
     font-size: 40px ;
     font-weight: normal;
     color: black;
-    padding-left: 30px;
     font-family: "Pompiere";
     margin-top: 40px;
 }
@@ -79,16 +77,17 @@
     padding: 50px;
 }
 .Productos-Inicio {
+    display: flex;
     width: 100%;
+    height: 400px;
     background-color: white;
-    margin: 50px 20px;
+    margin: 40px;
 }
 .producto-texto {
     flex: 1;
     padding: 20px;
 }
 .producto-imagen {
-    flex: 1;
     display: flex;
     justify-content: flex-end; 
     align-items: center; 
@@ -99,8 +98,7 @@
     height: 400px; 
 }
 .coco-fondo img{
-    position: relative;
-    width: 1650px; 
+    width: 100%; 
     height: 400px; 
     object-fit: cover; 
     object-position: center calc(50% - 270px);
@@ -140,13 +138,13 @@
 .Productos-Inicio {
     display: flex;
     background-color: white;
-    width: 1650px; 
+    width: 100%; 
     height: 400px;
     padding: 40px;
     
 }
 .producto-texto p{
-    font-family: poppins;
+    font-family: "Poppins";
     font-size: 50px;
     color: black;
     margin-top: 30px;
@@ -178,7 +176,7 @@
 .Seccion-contacto {
     display: flex;
     background-color: white;
-    width: 1650px; 
+    width: 100%; 
     height: 200px;
     padding: 40px;
     margin: 50px 50px;
@@ -474,8 +472,19 @@ textarea{
 }
 
 .portada-propiedades img{
-    width: 1650px;
+    width: 100%;
     height: 250px;
     position: relative;
     object-fit: cover;
+}
+@media (max-width: 768px) {
+    .coco-fondo img {
+        height: auto; 
+    }
+    .texto-sobre-imagen {
+        font-size: 1.5em; 
+    }
+    .boton-Conocenos {
+        font-size: 1.5em; 
+    }
 }
