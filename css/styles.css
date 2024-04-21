@@ -72,82 +72,44 @@
 
 .primeraSeccion img {
     flex: 1;
-    width: 100px; 
-    height: 500px; 
-    padding: 50px;
+    max-width: 100%;  
+    height: auto; 
+    padding: 20px;
 }
 .Productos-Inicio {
     display: flex;
-    width: 100%;
-    height: 400px;
     background-color: white;
-    margin: 40px;
+    width: 100%; 
+    height: 400px;
+    padding: 30px;
+    margin-bottom: 50px;
+    
 }
 .producto-texto {
     flex: 1;
-    padding: 20px;
-}
-.producto-imagen {
-    display: flex;
-    justify-content: flex-end; 
-    align-items: center; 
-}
-
-.producto-imagen img {
-    width: 200px; 
-    height: 400px; 
-}
-.coco-fondo img{
-    width: 100%; 
-    height: 400px; 
-    object-fit: cover; 
-    object-position: center calc(50% - 270px);
-}
-.texto-sobre-imagen {
-    position: absolute;
-    top: 1300px; 
-    left: 950px; 
-    text-align: right justify;
-    font-family: 'Poppins';
-    font-weight: normal;
-    font-size: 43px; 
-    color: white;
-    padding-top: 100px;
-}
-.boton-Conocenos a {
-    color: #000;
-    font-family: 'Roboto';
-    
-}
-.boton-Conocenos {
-    position: absolute;
-    background-color: #fff;
-    border: 3px solid black;
-    padding: 20px 30px;
-    cursor: pointer;
-    font-size: 40px;
-    text-decoration: none;
-    top: 200px;
-    right: 250px;
-    border-radius: 25px;
-    margin-top: 100px;
-}
-.boton-Conocenos:hover {
-    background-color: #8d8cc5;
-}
-.Productos-Inicio {
-    display: flex;
-    background-color: white;
-    width: 100%; 
-    height: 400px;
-    padding: 40px;
-    
+    align-self: center; 
+    text-align: center; 
+    align-items: center;
 }
 .producto-texto p{
     font-family: "Poppins";
+    text-align: left;
     font-size: 50px;
     color: black;
-    margin-top: 30px;
+    margin-top: 20px;
+}
+.producto-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.producto-imagen img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    margin-right: 30px; 
+    
 }
 .boton-NuestrosProductos{
     background-color: #D3C4F2;
@@ -156,9 +118,9 @@
     border-radius: 4px; 
     cursor: pointer; 
     width: 300px; 
-    height: 80px; 
-    margin-left: 350px;
-    margin-top: 18px;
+    height: 90px; 
+    margin-left: 200px;
+    margin-top: 18px auto;
 }
 
 .boton-NuestrosProductos:active {
@@ -173,16 +135,56 @@
     font-size: 35px;
     font-family: roboto;
 }
+.coco-fondo img{
+    width: 100%; 
+    height: 400px; 
+    object-fit: cover; 
+    object-position: center calc(50% - 270px);
+}
+.texto-sobre-imagen {
+    position: absolute;
+    top: 1300px; 
+    left: 950px; 
+    text-align: right justify;
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-size: 35px; 
+    color: white;
+    padding-top: 100px;
+}
+.boton-Conocenos a {
+    color: #000;
+    font-family: 'Roboto';
+    
+}
+.boton-Conocenos {
+    position: absolute;
+    background-color: #fff;
+    border: 3px solid black;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 40px;
+    text-decoration: none;
+    top: 250px;
+    right: 150px;
+    border-radius: 25px;
+    margin-top: 110px;
+}
+.boton-Conocenos:hover {
+    background-color: #8d8cc5;
+} 
 .Seccion-contacto {
     display: flex;
     background-color: white;
     width: 100%; 
-    height: 200px;
+    height: auto;
     padding: 40px;
-    margin: 50px 50px;
+    margin: 50px -50px;
+    align-items: center;
+    flex-direction: column;
 }
 .texto-contacto{
-    font-size: 40px;
+    font-size: 35px;
     font-family: "Poppins";
     color: black;
     text-align: center;
@@ -240,7 +242,7 @@
 }
 .redes-sociales {
     text-align: center;
-    margin-left: 550px;
+    margin-left: 350px;
     margin-top: 10px;
 }
 .redes-sociales p{
@@ -255,13 +257,13 @@
     align-items: center;
 }
 .Imagen-footer{
-    margin-left: 400px;
+    margin-left: 250px;
     
 }
 .Imagen-footer img{
     height: 100px;
     width: 250px;
-    padding: 0px 20px;
+    padding: 10px 20px;
 }
 .Imagen-footer p{
     font-family: 'Rochester';
@@ -274,6 +276,75 @@
     position: relative;
     object-fit: cover;
 }
+
+.productos{
+    width: 100%;
+    border: 3px solid #ccc; 
+    border-radius: 0px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+}
+.productos p{
+    font-size: 50px;
+    text-align: center;
+    font-family: Rochester;
+    padding: 10px;
+    
+}
+.Catalogo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #EFEDFF;
+    padding: 50px;
+    
+}
+ .Crema{
+    width: calc(33.33% - 40px);
+    max-width: 350px;
+    height: 450px;
+    border: 2px solid #ccc; 
+    border-radius: 20px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+    overflow: hidden;
+    margin-bottom: 50px; 
+    margin-right: 50px; 
+    background-color: #EEEDED;
+}
+ .Crema div {
+    width: 100%;
+    height: 80%;
+    
+    
+ }
+ .Crema div img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+ }
+.Crema p {
+    font-family: Roboto;
+    font-size: 25px;
+    text-align: center;
+    padding: 8px;
+}
+.Crema button {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin-top: -5px;
+    margin-top: -5px;
+    margin-left: 120px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #FFD972;
+}
+
+.Crema button:hover{
+    background-color: #EEEDED;
+}
+
+
 .portada-nosotros img{
     width: 100%;
     height: 250px;
@@ -477,6 +548,189 @@ textarea{
     position: relative;
     object-fit: cover;
 }
+.conteiner-propiedades{
+    background-color:#EFEDFF;
+    padding: 100px;
+    
+    
+}
+.propiedades {
+    background-color: #8D8CC1;
+    padding: 100px;
+    border: 20px solid white; 
+}
+.introduccion{
+    background-color: #EFEDFF;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: normal;
+    padding: 20px;
+    text-align: center;
+}
+
+.sabias-que {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sabias-que-texto {
+    background-color: #D7D2FF;
+    padding: 50px;
+}
+.sabias-que h5 {
+    font-family: Poppins;
+    font-size: 35px;
+    text-align: center;
+}
+.sabias-que p {
+    font-family: Poppins;
+    font-size: 20px;
+    text-align: center;
+}
+.img-lavanda{
+    position: relative;
+    margin-top: 50px;
+    width: 1000px; 
+    height: 300px; 
+    transform: rotate(15deg);
+    border-radius: 5px; 
+    background-color: white;
+}
+    
+.img-lavanda img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 20px solid white; 
+    box-shadow: 0 10px 20px rgba(255, 253, 253, 0.3); 
+    transform: rotate(15deg); /* Contrarrestar la inclinación para que la imagen parezca recta */
+}
+.Aguademar{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-aguademar {
+    position: relative;
+    margin-top: 50px;
+    width: 1000px; 
+    height: 300px; 
+    transform: rotate(-20deg);
+    border-radius: 5px; 
+    background-color: white;
+}
+.img-aguademar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 20px solid white; 
+    box-shadow: 0 10px 20px rgba(255, 253, 253, 0.3); 
+    transform: rotate(5deg);
+}
+.texto-agua {
+    background-color: #D7D2FF;
+    padding: 30px;
+}
+.texto-agua h3 {
+    font-family: Poppins;
+    font-size: 35px;
+    text-align: center;
+}
+.texto-agua p {
+    font-family: Poppins;
+    font-size: 20px;
+    text-align: center;
+}
+.aceitejojoba {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.texto-jojoba {
+    background-color: #D7D2FF;
+    padding: 50px;
+    margin: 20px;
+}
+.texto-jojoba h2 {
+    font-family: Poppins;
+    font-size: 35px;
+    text-align: center;
+}
+.texto-jojoba p {
+    font-family: Poppins;
+    font-size: 20px;
+    text-align: center;
+}
+.imgJojoba{
+    position: relative;
+    margin-top: 50px;
+    width: 1000px; 
+    height: 350px;     
+}
+    
+.imgJojoba img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 20px solid white; 
+    box-shadow: 0 10px 20px rgba(255, 253, 253, 0.3); 
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .primeraSeccion {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .primeraSeccion-texto h2 {
+        font-size: 60px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .primeraSeccion-texto p {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .primeraSeccion img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 768px) {
+    .Productos-Inicio {
+        flex-direction: column;
+        height: auto;
+        justify-content: flex-start; 
+    }
+
+    .producto-texto p {
+        font-size: 30px;
+        margin-top: 30px;
+        text-align: left; /* Alinear el texto a la izquierda en pantallas pequeñas */
+    }
+
+    .producto-imagen img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .boton-NuestrosProductos {
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+}
 @media (max-width: 768px) {
     .coco-fondo img {
         height: auto; 
@@ -486,6 +740,27 @@ textarea{
     }
     .boton-Conocenos {
         font-size: 1.5em; 
+    }
+}
+@media (max-width: 768px) {
+    .texto-contacto {
+        font-size: 7vw;
+        padding-left: 0; 
+    }
+
+    .boton-Contáctanos {
+        width: 80%; 
+        font-size: 5vw; 
+    }
+}
+@media (max-width: 768px) {
+    .Crema {
+        width: calc(50% - 20px); 
+        margin-right: 20px; 
+    }
+
+    .Crema button {
+        font-size: 14px;  
     }
 }
 
